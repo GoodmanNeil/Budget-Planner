@@ -1,0 +1,43 @@
+Account Types
+-------------
+
+1. Cash
+2. Current/Checking
+3. Savings
+4. Credit Card
+5. Store Card
+
+Accounts
+--------
+
+1. Cash - default
+
+Transaction Types
+-----------------
+
+1. Debit
+2. Credit
+3. Transfer from
+4. Transfer to
+
+Frequency Types
+---------------
+
+1. Daily
+2. Weekly
+3. Monthly
+4. Annual
+
+Bill and Payment Types
+----------------------
+
+1. Mortgage
+2. Rent
+3. Car Loan
+4. Bank Loan
+5. Insurance
+6. Utility
+7. Tax
+8. Subscription
+9. Student Fees
+10. Credit Loan

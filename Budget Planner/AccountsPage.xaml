@@ -1,0 +1,44 @@
+﻿<Page
+    x:Class="Budget_Planner.AccountsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Budget_Planner"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DataContext="Budget_Planner.BudgetContext"
+    mc:Ignorable="d">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="Account Name" Margin="20,20,0,0" />
+            <TextBox Grid.Column="1" Text="{Binding AccountName}" Margin="20,20,827,0" />
+            <TextBlock Grid.Row="1" Text="Opening Balance" Margin="20,20,0,0" />
+            <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding OpeningBalance}" Margin="20,20,827,0" />
+            <TextBlock Grid.Row="2" Text="Account Type" Margin="20,20,0,0" />
+            <ComboBox Grid.Row="2" Grid.Column="1" DataContext="{Binding AccountType}" Margin="20,20,0,0" Width="300">
+                <ComboBoxItem Tag="1">Cash</ComboBoxItem>
+                <ComboBoxItem Tag="2">Current Account</ComboBoxItem>
+                <ComboBoxItem Tag="3">Checking Account</ComboBoxItem>
+                <ComboBoxItem Tag="4">Credit Card</ComboBoxItem>
+                <ComboBoxItem Tag="5">Savings</ComboBoxItem>
+                <ComboBoxItem Tag="6">Store Card></ComboBoxItem>
+            </ComboBox>
+         </Grid>
+     </Grid>
+</Page>
